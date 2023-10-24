@@ -7,11 +7,22 @@ import android.widget.BaseAdapter;
 
 import com.example.myapplication.bean.ShopBean;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ShopAdapter  extends BaseAdapter {
     private Context context;
-    private List<ShopBean> data;
+    private List<ShopBean> data = new ArrayList<>();
+
+    public ShopAdapter(Context context) {
+        this.context = context;
+    }
+
+    public void setData(List<ShopBean> data) {
+        this.data.clear();
+        this.data.addAll(data);
+        notifyDataSetChanged();
+    }
 
     @Override
     public int getCount() {
