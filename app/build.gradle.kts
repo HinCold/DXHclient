@@ -35,6 +35,7 @@ dependencies {
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation(files("libs\\glide-3.7.0.jar"))
     implementation(files("libs\\gson-2.10.1.jar"))
+    implementation(files("libs\\okhttp-4.10.0.jar"))
 //    implementation("com.google.code.gson:gson:2.10.1")
 //    implementation(files("E:\\swhub\\AnfroidTool\\AndroidProject\\Order\\.idea\\libraries\\Gradle__com_google_code_gson_gson_2_8_5_jar.xml"))
     testImplementation("junit:junit:4.13.2")
